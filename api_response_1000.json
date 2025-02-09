@@ -1,0 +1,4858 @@
+{
+  "resultsPerPage": 50,
+  "startIndex": 1000,
+  "totalResults": 280449,
+  "format": "NVD_CVE",
+  "version": "2.0",
+  "timestamp": "2025-02-09T17:11:27.350",
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-1999-1323",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-09T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:50.370",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Norton AntiVirus for Internet Email Gateways (NAVIEG) 1.0.1.7 and earlier, and Norton AntiVirus for MS Exchange (NAVMSE) 1.5 and earlier, store the administrator password in cleartext in (1) the navieg.ini file for NAVIEG, and (2) the ModifyPassword registry key in NAVMSE."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 4.6,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 3.9,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": true,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:symantec:norton_antivirus:*:*:internet_email_gateways:*:*:*:*:*",
+                    "versionEndIncluding": "1.0.1.7",
+                    "matchCriteriaId": "0653E1AA-4FE6-42A2-B221-52DF556544C9"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:symantec:norton_antivirus:*:*:exchange:*:*:*:*:*",
+                    "versionEndIncluding": "1.5",
+                    "matchCriteriaId": "478F8894-81D8-43F3-8C2D-098419BFD96D"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=ntbugtraq&m=92370067416739&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=ntbugtraq&m=92370067416739&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0444",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-12T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:45.180",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Remote attackers can perform a denial of service in Windows machines using malicious ARP packets, forcing a message box display for each packet or filling up log files."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_95:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "82F7322B-8022-4D0B-ADB3-D0F5B6F20309"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_98:*:gold:*:*:*:*:*:*",
+                    "matchCriteriaId": "2D3B703C-79B2-4FA2-9E12-713AB977A880"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_nt:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "ED27882B-A02A-4D5F-9117-A47976C676E0"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://marc.info/?l=bugtraq&m=92394891221029&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://marc.info/?l=bugtraq&m=92394891221029&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0446",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-12T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:45.453",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Local users can perform a denial of service in NetBSD 1.3.3 and earlier versions by creating an unusual symbolic link with the ln command, triggering a bug in VFS."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 2.1,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 3.9,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "B8C8CAB1-2D8C-4875-A795-41178D48410F"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2D3C937A-E9D8-474A-ABEB-A927EF7CC5B0"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2A8F8DE7-7A84-4350-A6D8-FCCB561D63B2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.osvdb.org/7051",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.osvdb.org/7051",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1369",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-14T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:57.047",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Real Media RealServer (rmserver) 6.0.3.353 stores a password in plaintext in the world-readable rmserver.cfg file, which allows local users to gain privileges."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 4.6,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 3.9,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": true,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:realnetworks:realserver:6.0.3.353:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "A0E48281-E72C-437C-8329-DC4E9F9AD04D"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92411181619110&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92411181619110&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1244",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-15T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:39.367",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "IPFilter 3.2.3 through 3.2.10 allows local users to modify arbitrary files via a symlink attack on the saved output file."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 7.2,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 3.9,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:darren_reed:ipfilter:3.2.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "B0B3CD7E-742F-43DD-9179-348D345EBCA4"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:darren_reed:ipfilter:3.2.4:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "B304AA52-CA2E-4BB6-8083-DA23F5E3666B"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:darren_reed:ipfilter:3.2.5:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "8651AFB6-AE6B-476E-9040-686E8D3B3E2D"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:darren_reed:ipfilter:3.2.6:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "9D06BB0F-7C38-4D0F-8F1D-DDEA5BA72FA5"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:darren_reed:ipfilter:3.2.7:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "DE1C3525-3BA8-4198-9932-394E77290863"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:darren_reed:ipfilter:3.2.8:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "802826A3-6CF8-4821-A186-6BE979CE536D"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:darren_reed:ipfilter:3.2.9:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "ADEB76BF-F6DA-47DF-8212-85700E147D33"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:darren_reed:ipfilter:3.2.10:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "FA4E6702-F0F0-42CA-A135-839C09C061E6"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.securityfocus.com/archive/1/13303",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2087",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/archive/1/13303",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2087",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0684",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-19T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:13.623",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Denial of service in Sendmail 8.8.6 in HPUX."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:hp:sendmail:8.8.6:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "EF24069D-A149-4452-9D61-51FCE6C827C0"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0684",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0684",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0491",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-20T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:51.650",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The prompt parsing in bash allows a local user to execute commands as another user by creating a directory with the name of the command to execute."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 4.6,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 3.9,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": true,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-94"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:*:*:*:*:*:*:*:*",
+                    "versionEndIncluding": "2.04",
+                    "matchCriteriaId": "D642E874-A9B5-4199-8C9D-9CCA1B90C40D"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:1.14.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "FCAC75DF-FFF7-4721-9D47-6E29A5CCB7C8"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:1.14.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "FCF4B4BB-C5A0-4283-9657-FC61BC95C014"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:1.14.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "9B04CBBD-E855-48D7-A5C9-AEC2B38FF1F4"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:1.14.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "972BDA0A-25C8-4C02-8624-07D2462C214C"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:1.14.4:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "5B9EDE56-A8C4-40A8-9D14-F6E86F464BD7"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:1.14.5:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "DAB4B8E1-E013-4DB5-AF65-70CC2AEC3B20"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:1.14.6:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "B5428D5A-7443-4BDD-9690-E44DBDBCAC9E"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:1.14.7:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "18A6E8C3-334D-443B-8AD6-F8A131490F4C"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:2.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "5C74DAE6-8A77-47BF-B3ED-D76CD5AD75BB"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:2.01:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "8B631B7E-C59D-444F-80CE-DC2345A56E97"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:2.01.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "91C8E637-AD10-4854-AD60-A908D017DDA8"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:2.02:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "75AB7456-89E4-4F40-82D0-EED52CAEE670"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:2.02.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "C7E516F7-B6C6-4A0B-90F4-BC0F382E62E4"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:2.03:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2E37A5D0-79EB-442D-B4B8-49F5137A3FA9"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:2.05:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "0F027515-A126-4899-B78E-121C8312002F"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:gnu:bash:2.05:a:*:*:*:*:*:*",
+                    "matchCriteriaId": "AC05A483-FAFD-4C40-85BC-D2EE907B2B54"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "ftp://ftp.calderasystems.com/pub/OpenLinux/security/CSSA-1999-008.0.txt",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/119",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/templates/archive.pike?list=1&msg=Pine.LNX.4.10.9904202114070.6623-100000%40smooth.Operator.org",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "ftp://ftp.calderasystems.com/pub/OpenLinux/security/CSSA-1999-008.0.txt",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/119",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.securityfocus.com/templates/archive.pike?list=1&msg=Pine.LNX.4.10.9904202114070.6623-100000%40smooth.Operator.org",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0604",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-20T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:05.727",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "An incorrect configuration of the WebStore 1.0 shopping cart CGI program \"web_store.cgi\" could disclose private information."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:selena_sol:selena_sol_webstore:1.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "54C62EA6-5F28-45B2-9A83-2CF0677FE727"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92462991805485&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92462991805485&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0607",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-20T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:06.140",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "quikstore.cgi in QuikStore shopping cart stores quikstore.cfg under the web document root with insufficient access control, which allows remote attackers to obtain the cleartext administrator password and gain privileges."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:i-soft:quikstore:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "97464CB1-6822-4CAF-A155-9CC35A19594E"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92462991805485&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92462991805485&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0466",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-21T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:48.157",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The SVR4 /dev/wabi special device file in NetBSD 1.3.3 and earlier allows a local user to read or write arbitrary files on the disk associated with that device."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 7.2,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 3.9,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "7CBA1B13-B378-4F13-BD13-EC58F15F5C81"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "B8C8CAB1-2D8C-4875-A795-41178D48410F"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2D3C937A-E9D8-474A-ABEB-A927EF7CC5B0"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2A8F8DE7-7A84-4350-A6D8-FCCB561D63B2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.osvdb.org/905",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.osvdb.org/905",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0488",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-21T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:51.227",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Internet Explorer 4.0 and 5.0 allows a remote attacker to execute security scripts in a different security context using malicious URLs, a variant of the \"cross frame\" vulnerability."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 7.5,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": true,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "A5B815D9-BC21-4A17-AF00-B8AD181027D7"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:4.0.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "42502347-DD40-4F8C-9861-C0A88A3F8608"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:4.0.1:sp1:*:*:*:*:*:*",
+                    "matchCriteriaId": "0AF9C64F-9A67-4BA9-A653-75507935E6EA"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:5.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E6B8985B-B927-4928-B1DB-18E29F796992"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-012",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-012",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0490",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-21T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:51.513",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "MSHTML.DLL in Internet Explorer 5.0 allows a remote attacker to learn information about a local user's files via an IMG SRC tag."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 7.5,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": true,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "A5B815D9-BC21-4A17-AF00-B8AD181027D7"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:5.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E6B8985B-B927-4928-B1DB-18E29F796992"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-012",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-012",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0492",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-23T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:51.820",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The ffingerd 1.19 allows remote attackers to identify users on the target system based on its responses."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0492",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0492",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0712",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-27T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:17.593",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A vulnerability in Caldera Open Administration System (COAS) allows the /etc/shadow password file to be made world-readable."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 2.1,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 3.9,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:caldera:coas:1.0.5:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2768B34B-979E-480C-ABEB-6D599305BFFA"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:caldera:coas:1.0.6:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "F0A2FA5B-8B20-4324-9AA2-D6D689D9B08F"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:caldera:coas:1.0.7:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "FB6C4E55-A3DA-48C2-A4F9-3D93759FAE54"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:caldera:openlinux:2.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "86288A2E-B1BD-4DA9-BCCC-35AC44EEDD52"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0712",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0712",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0711",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-04-29T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:17.430",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The oratclsh interpreter in Oracle 8.x Intelligent Agent for Unix allows local users to execute Tcl commands as root."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 4.6,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 3.9,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": true,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:oracle:oracle8i:8.0.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "44F4BD05-8A36-4C17-AA00-01CE12A66137"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:oracle:oracle8i:8.0.4:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "BF68DBCB-377C-476A-9373-5A85AA20916C"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:oracle:oracle8i:8.0.5:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "0F492716-428E-41DF-AC50-1C8A84DBA2DF"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:oracle:oracle8i:8.0.5.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "AE91CC68-D396-4437-886C-370D30A771CD"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:oracle:oracle8i:8.1.5:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "42AF8B37-C5AA-4B92-A565-214A677C3486"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92609807906778&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?t=92550157100002&w=2&r=1",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92609807906778&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://marc.info/?t=92550157100002&w=2&r=1",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0194",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-01T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:05.960",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Denial of service in in.comsat allows attackers to generate messages."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0194",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0194",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0487",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-01T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:51.077",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The DHTML Edit ActiveX control in Internet Explorer allows remote attackers to read arbitrary files."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+                "baseScore": 2.6,
+                "accessVector": "NETWORK",
+                "accessComplexity": "HIGH",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 4.9,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": true
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "A5B815D9-BC21-4A17-AF00-B8AD181027D7"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:5.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E6B8985B-B927-4928-B1DB-18E29F796992"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-011",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-011",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0763",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-01T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:24.830",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "NetBSD on a multi-homed host allows ARP packets on one network to modify ARP entries on another connected network."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+                "baseScore": 6.4,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 4.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "7CBA1B13-B378-4F13-BD13-EC58F15F5C81"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.osvdb.org/6540",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.osvdb.org/6540",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0764",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-01T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:24.970",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "NetBSD allows ARP packets to overwrite static ARP entries."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+                "baseScore": 6.4,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 4.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:netbsd:netbsd:1.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "7CBA1B13-B378-4F13-BD13-EC58F15F5C81"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.osvdb.org/6539",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.osvdb.org/6539",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0807",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-01T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:31.233",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The Netscape Directory Server installation procedure leaves sensitive information in a file that is accessible to local users."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 7.2,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 3.9,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:netscape:directory_server:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "33D8DAD0-34B8-4D97-B026-4305D6C73B12"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0807",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0807",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1418",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-01T04:00:00.000",
+        "lastModified": "2024-11-20T23:31:04.100",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "ICQ99 ICQ web server build 1701 with \"Active Homepage\" enabled generates allows remote attackers to determine the existence of files on the server by comparing server responses when a file exists (\"404 Forbidden\") versus when a file does not exist (\"404 not found\")."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:mirabilis:icq_web_front:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "5BAA7C32-B6AE-4033-A91E-29962CCB0190"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.securityfocus.com/archive/1/13508",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/246",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/archive/1/13508",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/246",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1553",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-01T04:00:00.000",
+        "lastModified": "2024-11-20T23:31:23.490",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Buffer overflow in XCmail 0.99.6 with autoquote enabled allows remote attackers to execute arbitrary commands via a long subject line."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:xcmail:xcmail:0.99.6:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "F648C777-04FD-4F93-BE0F-B1A214BA63DF"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.securityfocus.com/archive/1/12730",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Exploit"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/311",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1859",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/archive/1/12730",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Exploit"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/311",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1859",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "The authors were notified of this problem and it was fixed in devel-release 0.99.7."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2000-0412",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-01T04:00:00.000",
+        "lastModified": "2024-11-20T23:32:26.780",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The gnapster and knapster clients for Napster do not properly restrict access only to MP3 files, which allows remote attackers to read arbitrary files from the client by specifying the full pathname for the file."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 7.5,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": true,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:napster:knapster:napster:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "D374899D-763B-49F9-96D8-831D7573BD0E"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-00:18-gnapster.adv",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://archives.neohapsis.com/archives/bugtraq/2000-05/0124.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://archives.neohapsis.com/archives/bugtraq/2000-05/0127.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/1186",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-00:18-gnapster.adv",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://archives.neohapsis.com/archives/bugtraq/2000-05/0124.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://archives.neohapsis.com/archives/bugtraq/2000-05/0127.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/1186",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1012",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-04T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:04.210",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "SMTP component of Lotus Domino 4.6.1 on AS/400, and possibly other operating systems, allows a remote attacker to crash the mail server via a long string."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:lotus:domino:4.6.1:*:as_400:*:*:*:*:*",
+                    "matchCriteriaId": "DCEF37BA-4294-4F11-BCA9-CBA04370921A"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.securityfocus.com/archive/1/13527",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/173",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/archive/1/13527",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/173",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Vendor Advisory"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1097",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-04T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:17.660",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Microsoft NetMeeting 2.1 allows one client to read the contents of another client's clipboard via a CTRL-C in the chat box when the box is empty."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+                "baseScore": 6.4,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 4.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:netmeeting:*:*:*:*:*:*:*:*",
+                    "versionEndIncluding": "2.1",
+                    "matchCriteriaId": "15B0FC30-A23E-435C-8B15-9C544CFB99F8"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92586457816446&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2187",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92586457816446&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2187",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1195",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-05T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:32.230",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "NAI VirusScan NT 4.0.2 does not properly modify the scan.dat virus definition file during an update via FTP, but it reports that the update was successful, which could cause a system administrator to believe that the definitions have been updated correctly."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+                "baseScore": 5.1,
+                "accessVector": "NETWORK",
+                "accessComplexity": "HIGH",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 4.9,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:network_associates:virusscan:4.0.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "DBB7848B-0E1D-4EEA-8C1B-38C8EB3B6C09"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92588169005196&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=ntbugtraq&m=92587579032534&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/169",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92588169005196&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://marc.info/?l=ntbugtraq&m=92587579032534&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/169",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1079",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-06T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:14.767",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Vulnerability in ptrace in AIX 4.3 allows local users to gain privileges by attaching to a setgid program."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 4.6,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 3.9,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": true,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:3.2.5:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "D3C00FC9-AD97-4226-A0EA-7DB14AA592DE"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "FBF25306-E7C2-4F9A-A809-4779A6C0A079"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.1.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "B3BA7775-30F2-4CA0-BA6E-70ED12A48D90"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.1.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "FB038A89-1CA6-4313-B7CE-56C894945FFD"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.1.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2B3BC86F-5718-4232-BFFF-6244A7C09B8F"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.1.4:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E6118CC1-6E51-4E1B-8F58-43B337515222"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.1.5:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "F3D3B348-270F-4209-B31A-2B40F5E4A601"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "05F20EC2-ADE6-4F96-A2E7-1DCCA819D657"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.2.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "91D7C561-4D23-430B-A7D8-137E52B08FF5"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "11ACD012-F05F-45CD-A170-96CBAA42FFE4"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:ibm:aix:4.3.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "45F3C5D8-8BC3-44EB-917A-D0BA051D3D9D"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92601792420088&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=93587956513233&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www-1.ibm.com/servlet/support/manager?rs=0&rt=0&org=apars&doc=08E0B1A1B85472A1852567C90031BB36",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/439",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92601792420088&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=93587956513233&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www-1.ibm.com/servlet/support/manager?rs=0&rt=0&org=apars&doc=08E0B1A1B85472A1852567C90031BB36",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/439",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1241",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-06T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:38.973",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Internet Explorer, with a security setting below Medium, allows remote attackers to execute arbitrary commands via a malicious web page that uses the FileSystemObject ActiveX object."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:6.0.2900:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "7B90EA4B-DA10-44B7-BD3D-6AE1197212D5"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://oliver.efri.hr/~crv/security/bugs/NT/activex4.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2173",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://oliver.efri.hr/~crv/security/bugs/NT/activex4.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2173",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1367",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-06T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:56.770",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Internet Explorer 5.0 does not properly reset the username/password cache for Web sites that do not use standard cache controls, which could allow users on the same system to access restricted web sites that were visited by other users."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 4.6,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 3.9,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": true,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_explorer:5.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E6B8985B-B927-4928-B1DB-18E29F796992"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.pcworld.com/news/article/0%2Caid%2C10842%2C00.asp",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.pcworld.com/news/article/0%2Caid%2C10842%2C00.asp",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0686",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-07T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:13.890",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Denial of service in Netscape Enterprise Server (NES) in HP Virtual Vault (VVOS) via a long URL."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:netscape:enterprise_server:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "EF437206-7696-4583-A6DC-A622F02001EF"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:hp:hp-ux:10.24:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "4259A901-A1CF-44EE-80C4-2031D3FCADC3"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.ciac.org/ciac/bulletins/j-046.shtml",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www1.itrc.hp.com/service/cki/docDisplay.do?docId=HPSBUX9906-098",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.ciac.org/ciac/bulletins/j-046.shtml",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www1.itrc.hp.com/service/cki/docDisplay.do?docId=HPSBUX9906-098",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0717",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-07T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:18.273",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A remote attacker can disable the virus warning mechanism in Microsoft Excel 97."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:H/Au:N/C:N/I:P/A:N",
+                "baseScore": 2.6,
+                "accessVector": "NETWORK",
+                "accessComplexity": "HIGH",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 4.9,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": true
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:excel:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "7973AE7A-FE9F-4AB8-BBA8-98F3AF25487C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_2000:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "4E545C63-FE9C-4CA1-AF0F-D999D84D2AFD"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_95:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "82F7322B-8022-4D0B-ADB3-D0F5B6F20309"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_98:*:gold:*:*:*:*:*:*",
+                    "matchCriteriaId": "2D3B703C-79B2-4FA2-9E12-713AB977A880"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_nt:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "ED27882B-A02A-4D5F-9117-A47976C676E0"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_nt:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E53CDA8E-50A8-4509-B070-CCA5604FFB21"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://support.microsoft.com/default.aspx?scid=kb%3B%5BLN%5D%3BQ231304",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-014",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://support.microsoft.com/default.aspx?scid=kb%3B%5BLN%5D%3BQ231304",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-014",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0736",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-07T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:21.100",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The showcode.asp sample file in IIS and Site Server allows remote attackers to read arbitrary files."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_information_server:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "5D47E9C4-5439-4A82-BBD8-D6B482B47E51"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-013",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A932",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-013",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A932",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0737",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-07T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:21.247",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The viewcode.asp sample file in IIS and Site Server allows remote attackers to read arbitrary files."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_information_server:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "5D47E9C4-5439-4A82-BBD8-D6B482B47E51"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-013",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-013",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0738",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-07T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:21.380",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The code.asp sample file in IIS and Site Server allows remote attackers to read arbitrary files."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_information_server:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "5D47E9C4-5439-4A82-BBD8-D6B482B47E51"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-013",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-013",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0739",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-07T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:21.523",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The codebrws.asp sample file in IIS and Site Server allows remote attackers to read arbitrary files."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_information_server:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "5D47E9C4-5439-4A82-BBD8-D6B482B47E51"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-013",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-013",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1566",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-08T04:00:00.000",
+        "lastModified": "2024-11-20T23:31:25.320",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Buffer overflow in iParty server 1.2 and earlier allows remote attackers to cause a denial of service (crash) by connecting to default port 6004 and sending repeated extended characters."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:intel:iparty:*:*:*:*:*:*:*:*",
+                    "versionEndIncluding": "1.2",
+                    "matchCriteriaId": "4B7BB77B-6442-4763-97D9-AAC73BD5C097"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.securityfocus.com/archive/1/13600",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Exploit",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/archive/1/13600",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Exploit",
+              "Vendor Advisory"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0806",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-10T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:31.090",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Buffer overflow in Solaris dtprintinfo program."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 7.2,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 3.9,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:sun:sunos:5.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "C1370216-93EB-400F-9AA6-CB2DC316DAA7"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.osvdb.org/6552",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.osvdb.org/6552",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0754",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-11T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:23.573",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The INN inndstart program allows local users to gain privileges by specifying an alternate configuration file using the INNCONF environmental variable."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:isc:inn:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2CFFB533-89C9-493A-851E-393D502C8A9E"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "ftp://ftp.caldera.com/pub/security/OpenLinux/CSSA-1999-011.0.txt",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.redhat.com/corp/support/errata/inn99_05_22.html",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/255",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "ftp://ftp.caldera.com/pub/security/OpenLinux/CSSA-1999-011.0.txt",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.redhat.com/corp/support/errata/inn99_05_22.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/255",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0773",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-11T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:26.230",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Buffer overflow in Solaris lpset program allows local users to gain root access."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 7.2,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 3.9,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:sun:solaris:2.6:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "34EBF074-78C8-41AF-88F1-DA6726E56F8B"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:sun:solaris:7.0:*:x86:*:*:*:*:*",
+                    "matchCriteriaId": "8F1F312C-413F-4DB4-ABF4-48E33F6FECF2"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:sun:sunos:-:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "369207B4-96FA-4324-9445-98FAE8ECF5DB"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:sun:sunos:5.7:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "08003947-A4F1-44AC-84C6-9F8D097EB759"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.netspace.org/cgi-bin/wa?A2=ind9905B&L=bugtraq&P=R2017",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.netspace.org/cgi-bin/wa?A2=ind9905B&L=bugtraq&P=R2017",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0785",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-11T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:27.990",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The INN inndstart program allows local users to gain root privileges via the \"pathrun\" parameter in the inn.conf file."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 7.2,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 3.9,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": true,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:isc:inn:2.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "A2480B45-A626-49F5-A48B-BA6DFAA4411B"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:isc:inn:2.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "21969A37-9F10-4D70-AC73-F3DB4D169AEB"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:isc:inn:2.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "94FD2948-EF52-464B-A605-DA3806037762"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.securityfocus.com/bid/254",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/254",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1033",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-11T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:07.370",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Microsoft Outlook Express before 4.72.3612.1700 allows a malicious user to send a message that contains a .., which can inadvertently cause Outlook to re-enter POP3 command mode and cause the POP3 session to hang."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:outlook_express:*:*:*:*:*:*:*:*",
+                    "versionEndIncluding": "4.72.3612.1700",
+                    "matchCriteriaId": "00B9B00C-F15C-4876-BE02-5FD6DBBBB488"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:outlook_express:4.27.3110.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "6BAE90D0-1637-49F4-8453-5E9959B55002"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:outlook_express:4.72.3120.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "7769EE2E-A740-4AE8-B1B1-A5256C12601D"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92647407427342&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92663402004275&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/252",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Exploit",
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92647407427342&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92663402004275&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/252",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Exploit",
+              "Patch",
+              "Vendor Advisory"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1520",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-11T04:00:00.000",
+        "lastModified": "2024-11-20T23:31:18.737",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A configuration problem in the Ad Server Sample directory (AdSamples) in Microsoft Site Server 3.0 allows an attacker to obtain the SITE.CSC file, which exposes sensitive SQL database information."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:site_server:3.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "4A503018-356B-46D9-965F-60750B5B7484"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92647407227303&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/256",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Exploit",
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2270",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92647407227303&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/256",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Exploit",
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2270",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0229",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-12T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:11.307",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Denial of service in Windows NT IIS server using ..\\.."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:internet_information_server:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "CE9D333C-76E2-4BD9-B98B-5CB96363AB89"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0229",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0229",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0776",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-12T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:26.677",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Alibaba HTTP server allows remote attackers to read files via a .. (dot dot) attack."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:computer_software_manufaktur:alibaba:2.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "8DD3CBF4-B593-4C4A-8B9C-D005846B4090"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.ntbugtraq.com/default.asp?pid=36&sid=1&A2=ind9905&L=NTBUGTRAQ&P=R1533",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Exploit",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://www.ntbugtraq.com/default.asp?pid=36&sid=1&A2=ind9905&L=NTBUGTRAQ&P=R1533",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Exploit",
+              "Vendor Advisory"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1368",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-12T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:56.900",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "AV Option for MS Exchange Server option for InoculateIT 4.53, and possibly other versions, only scans the Inbox folder tree of a Microsoft Exchange server, which could allow viruses to escape detection if a user's rules cause the message to be moved to a different mailbox."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 7.5,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:broadcom:inoculateit:4.53:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "040E3DEF-F707-48EC-926F-B2CE00C8B90A"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=ntbugtraq&m=92652152723629&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=ntbugtraq&m=97439568517355&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=ntbugtraq&m=92652152723629&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://marc.info/?l=ntbugtraq&m=97439568517355&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1029",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-13T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:06.757",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "SSH server (sshd2) before 2.0.12 does not properly record login attempts if the connection is closed before the maximum number of tries, allowing a remote attacker to guess the password without showing up in the audit logs."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 7.5,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "4A7DB2FA-58A8-45B9-AE2E-AE20A872BF90"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.1:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "2DD92EA8-8C01-4E4E-9AFE-2B1242AB10CE"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.2:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "6FB31028-59BA-4833-BF14-3CB1CA18DAAC"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.3:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "8A3E89B6-872D-4541-A413-88A956FDAE81"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.4:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "98CC86ED-CA78-4E2A-8A12-4F766DB79733"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.5:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "BD500A33-4D0E-44B5-9BBE-A30AA999F662"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.6:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "EBB8D72F-51E7-47DF-96A4-4EBB517A79D7"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.7:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "EC2379BA-621E-4986-AAC5-AF359FD57381"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.8:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "9972B3A4-369E-40B5-9415-F92B7394604A"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.9:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "1B6E719F-010B-4B8A-B508-0491BD15C465"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.10:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E44D2AE3-DD8B-46D0-B6AB-9F0E6B4DCC4C"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:ssh:ssh2:2.0.11:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "B7735CDD-8BFC-4E30-9C88-27C8943637CA"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92663402004280&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/277",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2193",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92663402004280&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/277",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Patch",
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2193",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1366",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-15T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:56.637",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Pegasus e-mail client 3.0 and earlier uses weak encryption to store POP3 passwords in the pmail.ini file, which allows local users to easily decrypt the passwords and read e-mail."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:N",
+                "baseScore": 3.6,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 3.9,
+              "impactScore": 4.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:david_harris:pegasus_mail:*:*:*:*:*:*:*:*",
+                    "versionEndIncluding": "3.0",
+                    "matchCriteriaId": "BA789358-19BB-4F92-A11E-0622E48B355D"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92714118829880&w=2",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://marc.info/?l=bugtraq&m=92714118829880&w=2",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0489",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-17T04:00:00.000",
+        "lastModified": "2024-11-20T23:28:51.367",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "MSHTML.DLL in Internet Explorer 5.0 allows a remote attacker to paste a file name into the file upload intrinsic control, a variant of \"untrusted scripted paste\" as described in MS:MS98-013."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_nt:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E53CDA8E-50A8-4509-B070-CCA5604FFB21"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-015",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-015",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0716",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-17T04:00:00.000",
+        "lastModified": "2024-11-20T23:29:18.130",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Buffer overflow in Windows NT 4.0 help file utility via a malformed help file."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 4.6,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 3.9,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": true,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_2000:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "4E545C63-FE9C-4CA1-AF0F-D999D84D2AFD"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_nt:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "ED27882B-A02A-4D5F-9117-A47976C676E0"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_nt:4.0:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "E53CDA8E-50A8-4509-B070-CCA5604FFB21"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://support.microsoft.com/default.aspx?scid=kb%3B%5BLN%5D%3BQ231605",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-015",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://support.microsoft.com/default.aspx?scid=kb%3B%5BLN%5D%3BQ231605",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/security-updates/securitybulletins/1999/ms99-015",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-1156",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-05-17T04:00:00.000",
+        "lastModified": "2024-11-20T23:30:26.700",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "BisonWare FTP Server 4.1 and earlier allows remote attackers to cause a denial of service via a malformed PORT command that contains a non-numeric character and a large number of carriage returns."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                "baseScore": 5.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 10.0,
+              "impactScore": 2.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:bisonware:bisonware_ftp_server:*:*:*:*:*:*:*:*",
+                    "versionEndIncluding": "4.1",
+                    "matchCriteriaId": "D856B65A-48E8-4175-B10F-EFE6EE788AE4"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2254",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2254",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2676 @@
+{
+  "resultsPerPage": 50,
+  "startIndex": 750,
+  "totalResults": 280449,
+  "format": "NVD_CVE",
+  "version": "2.0",
+  "timestamp": "2025-02-09T17:09:02.160",
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-1999-0580",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:02.347",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The HKEY_LOCAL_MACHINE key in a Windows NT system has inappropriate, system-critical permissions."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0580",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0580",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0581",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:02.477",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The HKEY_CLASSES_ROOT key in a Windows NT system has inappropriate, system-critical permissions."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_nt:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "ED27882B-A02A-4D5F-9117-A47976C676E0"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0581",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0581",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0583",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:02.760",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "There is a one-way or two-way trust relationship between Windows NT domains."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1284",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1284",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0584",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:02.897",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A Windows NT file system is not NTFS."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/195",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/195",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0586",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:03.163",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A network service is running on a nonstandard port."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0586",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0586",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0587",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:03.290",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A WWW server is not running in a restricted file system, e.g. through a chroot, thus allowing access to system-critical data."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0587",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0587",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0588",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:03.413",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A filter in a router or firewall allows unusual fragmented packets."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                "baseScore": 7.5,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "PARTIAL",
+                "integrityImpact": "PARTIAL",
+                "availabilityImpact": "PARTIAL"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 6.4,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0588",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0588",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0589",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:03.547",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A system-critical Windows NT registry key has inappropriate permissions."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0589",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0589",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0591",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:03.813",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "An event log in Windows NT has inappropriate access permissions."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0591",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0591",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0592",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:03.950",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The Logon box of a Windows NT system displays the name of the last user who logged in."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1353",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1353",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0593",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:04.080",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The default setting for the Winlogon key entry ShutdownWithoutLogon in Windows NT allows users with physical access to shut down a Windows NT system without logging in."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
+                "baseScore": 4.9,
+                "accessVector": "LOCAL",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "MEDIUM",
+              "exploitabilityScore": 3.9,
+              "impactScore": 6.9,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:o:microsoft:windows_nt:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "ED27882B-A02A-4D5F-9117-A47976C676E0"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://osvdb.org/59333",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://technet.microsoft.com/en-us/library/cc722469.aspx",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.microsoft.com/technet/archive/winntas/deploy/confeat/06wntpcc.mspx?mfr=true",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1291",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://osvdb.org/59333",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://technet.microsoft.com/en-us/library/cc722469.aspx",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://www.microsoft.com/technet/archive/winntas/deploy/confeat/06wntpcc.mspx?mfr=true",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1291",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0594",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:04.257",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A Windows NT system does not restrict access to removable media drives such as a floppy disk drive or CDROM drive."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1294",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1294",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0596",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:04.583",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A Windows NT log file has an inappropriate maximum size or retention period."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2577",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/2577",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0597",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:04.743",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A Windows NT account policy does not forcibly disconnect remote users from the server when their logon hours expire."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1343",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/1343",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0598",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:04.887",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A network intrusion detection system (IDS) does not properly handle packets that are sent out of order, allowing an attacker to escape detection."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0599",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:05.033",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A network intrusion detection system (IDS) does not properly handle packets with improper sequence numbers."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0600",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:05.177",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A network intrusion detection system (IDS) does not verify the checksum on a packet."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0601",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:05.313",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A network intrusion detection system (IDS) does not properly handle data within TCP handshake packets."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0602",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:05.453",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A network intrusion detection system (IDS) does not properly reassemble fragmented packets."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://www.robertgraham.com/mirror/Ptacek-Newsham-Evasion-98.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0603",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:05.587",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "In Windows NT, an inappropriate user is a member of a group, e.g. Administrator, Backup Operators, Domain Admins, Domain Guests, Power Users, Print Operators, Replicators, System Operators, etc."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0603",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0603",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0611",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:06.710",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "A system-critical Windows NT registry key has an inappropriate value."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0611",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0611",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0613",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:06.960",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The rpc.sprayd service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0613",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0613",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "rpc.sprayd is an unsecured protocol for Internet facing systems and should only be used on a trusted network segment, otherwise disabled.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0614",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.310",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The FTP service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "The FTP Service is an unsecured protocol for Internet facing systems and should only be used on a limited basis to provide a specific functional requirement, otherwise disabled.  Secure alternatives that encrypt communications are available.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0615",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.343",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The SNMP service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "SNMPv3 is a secure protocol for management of networked systems, provided the cryptographic security mechanisms are used.  SNMPv1 and SNMPv2 are unsecured protocols for Internet facing systems and should  only be used on a trusted network segment.  For all versions, the software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0616",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.373",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The TFTP service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "The TFTP Service is an unsecured protocol and it should used only on a limited basis on rare occasion to provide a specific functional requirement, otherwise disabled.  Secure alternatives are available.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0617",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.410",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The SMTP service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "The SMTP Service is an unsecured protocol for Internet facing systems (e.g., user authentication not required, communications not encrypted) and should only be used on a limited basis to provide a specific functional requirement, otherwise disabled.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0618",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:07.153",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The rexec service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0618",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0618",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0619",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.450",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The Telnet service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "The Telnet Service is an unsecured and obsolete protocol and it should be disabled.  Secure alternatives such as SSH are available.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0620",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.480",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"A component service related to NIS is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "These protocols, such as RPC ypbind, yppasswd, ypserv, ypupdated, and ypxfrd, are unsecured protocols for Internet facing systems and should only be used on a trusted network segment, otherwise disabled.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0621",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.540",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"A component service related to NETBIOS is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "This component service should not be allowed to communicate over untrusted networks, such as the Internet, because it is an unsecured protocol (e.g., communications not encrypted).   The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0622",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.607",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"A component service related to DNS service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "DNS is a critical network service.  It should be fully patched and properly configured for Internet facing servers to avoid common attacks such as DNS spoofing, poisoning, and unauthorized zone transfers.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0623",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.640",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The X Windows service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "The XWindows service is an unsecured protocol for Internet facing system and should only be used on a trusted network segment, otherwise disabled.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0624",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:07.367",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The rstat/rstatd service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0624",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0624",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "These are unsecured and obsolete protocols and they should be disabled.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0625",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:07.500",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The rpc.rquotad service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0625",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0625",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "rpc.rquotad is an unsecured and obsolete protocol and it should be disabled.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0629",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:08.047",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The ident/identd service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0629",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0629",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0630",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:08.180",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The NT Alerter and Messenger services are running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://support.microsoft.com/support/kb/articles/q189/2/71.asp",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://support.microsoft.com/support/kb/articles/q189/2/71.asp",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0631",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.713",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The NFS service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "NFS Service is an unsecured protocol for Internet facing systems (e.g., user authentication not required, communications not encrypted) and should only be used on a trusted managed network, otherwise disabled.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0632",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:08.330",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The RPC portmapper service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0632",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0632",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "The RPC portmapper service is an unsecured protocol for Internet facing systems and should only be used on a trusted network segment, otherwise disabled.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0633",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.750",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The HTTP/WWW service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "The software should be patched and configured properly.  SSL/TLS should be used to protect transmissions of sensitive data.  The presence of HTTP may be an indication that an web application server is running on the system.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0634",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.870",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The SSH service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "SSH is a secure protocol, provided it is fully patched, properly configured, and uses FIPS approved algorithms.  SSH version 2 is preferred over SSH version 1 because of known flaws in version 1.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0635",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:08.480",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The echo service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "http://lists.grok.org.uk/pipermail/full-disclosure/2006-January/041434.html",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "http://secunia.com/advisories/18514",
+            "source": "cve@mitre.org",
+            "tags": [
+              "Vendor Advisory"
+            ]
+          },
+          {
+            "url": "http://lists.grok.org.uk/pipermail/full-disclosure/2006-January/041434.html",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          },
+          {
+            "url": "http://secunia.com/advisories/18514",
+            "source": "af854a3a-2127-422b-91ae-364da2661108",
+            "tags": [
+              "Vendor Advisory"
+            ]
+          }
+        ],
+        "evaluatorSolution": "The Echo Service is an unsecured and obsolete protocol and it should be disabled.  Historically it has been used to perform denial of service attacks.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0636",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:08.627",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The discard service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0636",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0636",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0637",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:08.753",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The systat service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0637",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0637",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "The systat service is an unsecured and obsolete protocol and it should be disabled because it can reveal information about a host's operations.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0638",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:08.877",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The daytime service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0638",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0638",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "The daytime service is an unsecured and obsolete protocol and it should be disabled.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0639",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:09.000",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The chargen service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0639",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0639",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "chargen service is an unsecured and obsolete protocol and it should be disabled.  Historically it has been used to perform denial of service attacks.  Ping and traceroute can be used to provide the same functionality.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0640",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:09.123",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The Gopher service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                "baseScore": 10.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "COMPLETE",
+                "integrityImpact": "COMPLETE",
+                "availabilityImpact": "COMPLETE"
+              },
+              "baseSeverity": "HIGH",
+              "exploitabilityScore": 10.0,
+              "impactScore": 10.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0640",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://www.cve.org/CVERecord?id=CVE-1999-0640",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0641",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2024-11-20T23:29:09.250",
+        "vulnStatus": "Modified",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "The UUCP service is running."
+          }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "cvssData": {
+                "version": "2.0",
+                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:N",
+                "baseScore": 0.0,
+                "accessVector": "NETWORK",
+                "accessComplexity": "LOW",
+                "authentication": "NONE",
+                "confidentialityImpact": "NONE",
+                "integrityImpact": "NONE",
+                "availabilityImpact": "NONE"
+              },
+              "baseSeverity": "LOW",
+              "exploitabilityScore": 10.0,
+              "impactScore": 0.0,
+              "acInsufInfo": false,
+              "obtainAllPrivilege": false,
+              "obtainUserPrivilege": false,
+              "obtainOtherPrivilege": false,
+              "userInteractionRequired": false
+            }
+          ]
+        },
+        "weaknesses": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "description": [
+              {
+                "lang": "en",
+                "value": "NVD-CWE-Other"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0641",
+            "source": "cve@mitre.org"
+          },
+          {
+            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0641",
+            "source": "af854a3a-2127-422b-91ae-364da2661108"
+          }
+        ],
+        "evaluatorSolution": "The UUCP Service is an unsecured and obsolete protocol and it should be disabled.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0642",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:54:59.973",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"A POP service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "POP3 is an unsecured protocol for Internet facing systems that does not encrypt its transmissions.  POP3 should be tunneled over SSL/TLS or another encrypted tunnel.  The software should be patched and configured properly.  Earlier versions of POP, such as POP2, are unsecured and obsolete, and should be disabled.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0643",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:55:00.010",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The IMAP service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "IMAP Service is an unsecured protocol for Internet facing systems that does not encrypt its transmissions.  IMAP should be tunneled over SSL/TLS or another encrypted tunnel.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-1999-0644",
+        "sourceIdentifier": "cve@mitre.org",
+        "published": "1999-01-01T05:00:00.000",
+        "lastModified": "2023-11-07T01:55:00.043",
+        "vulnStatus": "Rejected",
+        "cveTags": [],
+        "descriptions": [
+          {
+            "lang": "en",
+            "value": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: None.  Reason: this candidate is solely about a configuration that does not directly introduce security vulnerabilities, so it is more appropriate to cover under the Common Configuration Enumeration (CCE).  Notes: the former description is: \"The NNTP news service is running."
+          }
+        ],
+        "metrics": {},
+        "references": [],
+        "evaluatorSolution": "NNTP news service is an unsecured protocol for Internet facing systems (e.g., user authentication not required, communications not encrypted).  It could be tunneled over SSL/TLS.  The software should be patched and configured properly.",
+        "evaluatorImpact": "This Common Vulnerabilities and Exposures (CVE) entry is a configuration issue and not a software flaw. As such, it doesn\u2019t fit in the CVE software flaw list. The Common Vulnerability Scoring System (CVSS) base score for this CVE entry has been set to 0 because this CVE entry has no impact as a software flaw according to CVSS. This does not mean that the configuration issue is not important and there may be security implications relative to computers having this configuration."
+      }
+    }
+  ]
+}
