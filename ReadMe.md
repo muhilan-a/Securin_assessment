@@ -29,11 +29,11 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
 
 ## CVE List Page
 ### CVE List Page pagination
-![CVE List Page pagination](outputs/Screenshot_2025-02-12_224343.png)
+![CVE List Page pagination](outputs/cvlist1.png)
 
-![CVE List Page pagination](outputs/Screenshot_2025-02-12_224420.png)
+![CVE List Page pagination](outputs/cvlist2.png)
 ### CVE List Page sorting
-![CVE List Page Sorting](outputs/Screenshot_2025-02-12_224505.png)
+![CVE List Page Sorting](outputs/cvlistinfo.png)
 
 
 ## CVE DETAILS PAGE
@@ -42,9 +42,9 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
 
 ## API DOCUMENT PAGE
 ![CVE Details Page pagination](outputs/apidoc.png)
-![CVE Details Page pagination](outputs/Screenshot_2025-02-12_215317.png)
-![CVE Details Page pagination](outputs/Screenshot_2025-02-12_215332.png)
-![CVE Details Page pagination](outputs/outputs/Screenshot_2025-02-12_215352.png)
+![CVE Details Page pagination](outputs/apidoc2.png)
+![CVE Details Page pagination](outputs/apidoc3.png)
+![CVE Details Page pagination](outputs/outputs/apidoc4.png)
 ## output ScreenRecord
 ![CVE Details Page pagination](outputs/Recording_2025-02-12_225204.mp4)
 
