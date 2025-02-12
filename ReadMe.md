@@ -29,18 +29,24 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
 
 ## CVE List Page
 ### CVE List Page pagination
-![CVE List Page pagination](outputs/Screenshot 2025-02-12 224343.png)
+![CVE List Page pagination](outputs/Screenshot_2025-02-12_224343.png)
 
-![CVE List Page pagination](index_pagination3.png)
+![CVE List Page pagination](outputs/Screenshot_2025-02-12_224420.png)
 ### CVE List Page sorting
-![CVE List Page Sorting](outputs/Index_with_Sorting.png)
-![CVE List Page Sorting](outputs/Index_with_sorting_2.png)
+![CVE List Page Sorting](outputs/Screenshot_2025-02-12_224505.png)
+
 
 ## CVE DETAILS PAGE
-![CVE Details Page pagination](outputs/cve_details.png)
+![CVE Details Page pagination](outputs/Screenshot_2025-02-12_224657.png)
+![CVE Details Page pagination](outputs/Screenshot_2025-02-12_224739.png)
 
+## API DOCUMENT PAGE
+![CVE Details Page pagination](outputs/apidoc.png)
+![CVE Details Page pagination](outputs/Screenshot_2025-02-12_215317.png)
+![CVE Details Page pagination](outputs/Screenshot_2025-02-12_215332.png)
+![CVE Details Page pagination](outputs/outputs/Screenshot_2025-02-12_215352.png)
 ## output ScreenRecord
-![CVE Details Page pagination](ScreenRecording_output.mp4)
+![CVE Details Page pagination](outputs/Recording_2025-02-12_225204.mp4)
 
 
 
@@ -112,6 +118,28 @@ python run.py
 **Database:** SQLite (Production: PostgreSQL-ready)  
 **DevOps:** Git, pytest, Flask-Migrate  
 **APIs:** NVD CVE API v2.0
+**API DOCUMENTATION** Flasgger
+## Database Schema
+
+### CVE Model
+class CVE(db.Model):
+    __tablename__ = 'cve'
+    id = db.Column(db.String(20), primary_key=True)
+    published = db.Column(db.DateTime)
+    last_modified = db.Column(db.DateTime)
+    source_Identifier = db.Column(db.String(100))
+    description = db.Column(db.Text)
+    base_score_v2 = db.Column(db.Float)
+    base_score_v3 = db.Column(db.Float)
+    cvss_v2_vector = db.Column(db.String(100))
+    cvss_v2_severity = db.Column(db.String(50))
+    cvss_v3_vector = db.Column(db.String(100))
+    cvss_v3_severity = db.Column(db.String(20))
+    exploitability_score = db.Column(db.Float)
+    impact_score = db.Column(db.Float)
+    cpe_list = db.Column(db.JSON)
+    status = db.Column(db.String(50))
+    
 ## File Explanations
 
 ### 1. `app/__init__.py`
@@ -133,6 +161,11 @@ Defines database models using SQLAlchemy ORM.
 API rate limiting
 
 Input validation/sanitization
+
+## Acknowledgments
+
+- National Vulnerability Database (NVD) for providing the CVE data
+- Flask and SQLAlchemy communities for excellent documentation
 
 Prepared statements for SQL
 
