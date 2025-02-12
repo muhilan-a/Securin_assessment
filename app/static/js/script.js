@@ -1,4 +1,4 @@
-// Dynamic Results Per Page Selection
+
 document.addEventListener('DOMContentLoaded', function() {
     const perPageSelector = document.querySelector('select');
     if (perPageSelector) {
@@ -8,6 +8,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-// Optional: Client-side filtering (if implemented)
-// Add event listeners for filter inputs and make fetch requests
