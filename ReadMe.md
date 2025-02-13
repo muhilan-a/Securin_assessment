@@ -1,19 +1,5 @@
 # CVE Dashboard
 
-A Flask-based web application to fetch, store, and display CVE (Common Vulnerabilities and Exposures) data from the NVD (National Vulnerability Database) API.We have used Python as our primary programming language ,sqlite for database storage,flask for backend synchronisation and html,css and javascript for front end .
-
-## Features
-- Fetches CVE data from NVD API with pagination
-- Stores data in SQLite database
-- Data synchronization with periodic updates
-- Web UI with filtering/pagination
-- Detailed CVE view with CVSS metrics
-- Server-side sorting and filtering
-- API endpoints for data access
-- Unit tests
-- Error handling and logging
-
-
 ### Problem Statement
 1. Consume CVE data from NVD API and store in database
 2. Implement data cleansing/de-duplication
@@ -23,20 +9,43 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
 6. Prepare API documentation
 7. Write unit tests
 
+A Flask-based web application to fetch, store, and display CVE (Common Vulnerabilities and Exposures) data from the NVD (National Vulnerability Database) API.We have used Python as our primary programming language ,sqlite for database storage,flask for backend synchronisation and html,css and javascript for front end .
+
+
+## Features
+- **Automated Data Sync**: Periodic synchronization with NVD API
+- **RESTful API**: JSON endpoints for CVE data access
+- **Interactive UI**: 
+  - Tabular CVE listing with pagination
+  - Detailed CVE view with CVSS metrics
+  - Sorting and filtering capabilities
+- **Data Management**:
+  - SQLite database storage
+  - Automatic deduplication
+  - Null value cleanup
+- **API Documentation**: Integrated Swagger UI
+- **Security**: Input validation and error handling
+
+
+
+
 
 
 ## Screenshots
 
 ## CVE List Page
+
 ### CVE List Page pagination
 ![CVE List Page pagination](outputs/cvlist1.png)
 
 ![CVE List Page pagination](outputs/cvlist2.png)
 ### CVE List Page sorting
 
+![CVE List Page Sorting](outputs/cvss_score_sort.png)
+
 ![CVE List Page Sorting](outputs/cvlist3.png)
 
-![CVE List Page Sorting]()
+![CVE List Page Sorting](outputs/published_date_sort.png)
 
 
 
@@ -45,7 +54,7 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
 
 
 
-## API DOCUMENT PAGE
+# API DOCUMENT PAGE
 ![CVE Details Page pagination](outputs/apidoc.png)
 
 ![CVE Details Page pagination](outputs/apidoc2.png)
@@ -54,20 +63,13 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
 
 ![CVE Details Page pagination](outputs/apidoc4.png)
 
-## output ScreenRecord
+# output ScreenRecord
 
 ![CVE Details Page pagination](outputs/Recording_2025-02-12_225204.mp4)
 
 
 
-## Key Features
-- Real-time synchronization with NVD API (280K+ CVEs)
-- REST API endpoints with filtering capabilities
-- Interactive web interface with sorting/pagination
-- SQLite database with data cleansing/de-duplication
-- Automated batch updates (incremental/full refresh)
-- Chunk Processing: 2000 records/request with retry logic
-  
+
 
 ### Logical Approach
 1. **API Consumption**: 
@@ -77,6 +79,7 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
 
 2. **Data Processing**:
    - Clean data (handle missing fields)
+   - Deduplicate the Fields
    - Convert dates to datetime objects
    - Extract CVSS metrics from nested JSON
    - Validate mandatory fields (CVE ID, dates)
@@ -121,6 +124,16 @@ python sync_cves.py
 ### Start the application 
 python run.py
 
+### Usage
+**Web Interface:** http://localhost:5000/cves/list
+
+**API Documentation:** http://localhost:5000/apidocs/
+
+**API Endpoints:**
+
+GET /api/cves - List all CVEs
+
+GET /api/cves/<cve_id> - Get specific CVE details
 
 ## Tech Stack
 **Backend:** Python, Flask, SQLAlchemy  
@@ -150,27 +163,14 @@ class CVE(db.Model):
     cpe_list = db.Column(db.JSON)
     status = db.Column(db.String(50))
     
-## File Explanations
-
-### 1. `app/__init__.py`
-Initializes Flask application and database connection by creating a flask app instance and configures sqlAlchemy.
-
-
-
-### 2. `app/config.py`
-Contains configuration settings for the application such as the database uri,api endpoints,rate limiting etc
-
-
-
-### 3. `app/models.py`
-Defines database models using SQLAlchemy ORM.
-
-
-
 ## Security
 API rate limiting
 
 Input validation/sanitization
+## Testing 
+Run unit tests:
+python -m pytest tests/
+
 
 ## Acknowledgments
 
