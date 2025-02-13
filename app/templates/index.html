@@ -40,14 +40,13 @@
         {% endif %}
     </div>
 
-    <!-- Sorting Bar -->
     <div class="sorting-bar">
         <label for="sort-by">Sort by:</label>
         <select id="sort-by" onchange="sortTable(this.value)">
-            <option value="published">Published Date</option>
-            <option value="last_modified">Last Modified</option>
-            
-            <option value="base_score_v2">CVSS v2 Score</option>
+            <option value="published" {% if current_sort == 'published' %}selected{% endif %}>Published Date</option>
+            <option value="last_modified" {% if current_sort == 'last_modified' %}selected{% endif %}>Last Modified</option>
+            <option value="status" {% if current_sort == 'status' %}selected{% endif %}>Status</option>
+            <option value="base_score_v2" {% if current_sort == 'base_score_v2' %}selected{% endif %}>CVSS v2 Score</option>
             
         </select>
     </div>
