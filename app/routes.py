@@ -39,7 +39,7 @@ from flasgger import swag_from
 def list_cves():
     page = request.args.get('page', 1, type=int)
     per_page = request.args.get('per_page', 10, type=int)
-    sort_by = request.args.get('sort_by', 'published')  # Default to sorting by published date
+    sort_by = request.args.get('sort_by')  
 
     # Define valid sorting columns
     valid_sort_columns = {
@@ -55,7 +55,7 @@ def list_cves():
 
     # Query with sorting
     cves = CVE.query.order_by(sort_column).paginate(page=page, per_page=per_page)
-    return render_template('index.html', cves=cves)
+    return render_template('index.html', cves=cves,current_sort=sort_by)
 @app.route('/api/cves')
 def get_cves():
     # Filter parameters
