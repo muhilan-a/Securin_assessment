@@ -1,26 +1,37 @@
-from app import app, db, models
+import sqlite3
+from datetime import datetime
 
-def deduplicate_cves():
-    with app.app_context():
-        # Find duplicate CVE IDs
-        duplicates = db.session.query(
-            models.CVE.id
-        ).group_by(models.CVE.id).having(db.func.count() > 1).all()
+def clean_database():
+    # Connect to existing database
+    conn = sqlite3.connect('cves.db')
+    cursor = conn.cursor()
 
-        for (cve_id,) in duplicates:
-            # Get all duplicates for this CVE ID
-            records = models.CVE.query.filter_by(id=cve_id).all()
-            
-            # Keep the most recently modified record
-            latest = max(records, key=lambda x: x.last_modified)
-            
-            # Delete others
-            for record in records:
-                if record != latest:
-                    db.session.delete(record)
-            
-            db.session.commit()
-            print(f"Removed {len(records)-1} duplicates for {cve_id}")
+    
+    cursor.execute('''
+        DELETE FROM cve 
+        WHERE 
+            id IS NULL OR 
+            published IS NULL OR 
+            last_modified IS NULL OR
+            base_score_v2 IS NULL
+    ''')
+    print(f"Removed {cursor.rowcount} rows with null values")
+
+    
+    cursor.execute('''
+        DELETE FROM cve 
+        WHERE rowid NOT IN (
+            SELECT MIN(rowid) 
+            FROM cve 
+            GROUP BY id
+        )
+    ''')
+    print(f"Removed {cursor.rowcount} duplicate rows")
+
+
+    conn.commit()
+    conn.close()
 
 if __name__ == "__main__":
-    deduplicate_cves()
+    clean_database()
+    print("Database cleanup completed!")
