@@ -24,6 +24,8 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
   - Automatic deduplication
   - Null value cleanup
 - **API Documentation**: Integrated Swagger UI
+- **cve database filtering**
+  -Implement functions to filter the database by cve id, published date,score, last modified n days
 - **Security**: Input validation and error handling
 
 
@@ -36,36 +38,40 @@ A Flask-based web application to fetch, store, and display CVE (Common Vulnerabi
 ## CVE List Page
 
 ### CVE List Page pagination
-![CVE List Page pagination](outputs/cvlist1.png)
+![CVE List Page pagination](outputs2/index_page2.png)
 
-![CVE List Page pagination](outputs/cvlist2.png)
-### CVE List Page sorting
+![CVE List Page pagination](outputs2/index_page.png)
 
-![CVE List Page Sorting](outputs/cvss_score_sort.png)
+![CVE List Page pagination](outputs2/Index_page3.png)
+### CVE List Page sorting & filter 
 
-![CVE List Page Sorting](outputs/cvlist3.png)
+![CVE List Page Sorting](outputs2/sortby_filter.png)
 
-![CVE List Page Sorting](outputs/published_date_sort.png)
+![CVE List Page Sorting](outputs2/yearfilter.png)
+
+![CVE List Page Sorting](outputs2/cveidfilter.png)
 
 
 
 ## CVE DETAILS PAGE
-![CVE Details Page pagination](outputs/cvinfo.png)
+![CVE Details Page pagination](outputs2/cve_details.png)
 
 
 
 # API DOCUMENT PAGE
-![CVE Details Page pagination](outputs/apidoc.png)
+![CVE Details Page pagination](outputs2/apidoc.png)
 
-![CVE Details Page pagination](outputs/apidoc2.png)
+![CVE Details Page pagination](outputs2/cvelistapi.png)
 
-![CVE Details Page pagination](outputs/apidoc3.png)
+![CVE Details Page pagination](outputs2/cvelistapi2.png)
 
-![CVE Details Page pagination](outputs/apidoc4.png)
+![CVE Details Page pagination](outputs2/cvedetailapi.png)
+
+![CVE Details Page pagination](outputs2/cvedetailapi.png)
 
 # output ScreenRecord
 
-![CVE Details Page pagination](outputs/Recording_2025-02-12_225204.mp4)
+![CVE Details Page pagination](outputs2/Recordings.mp4)
 
 
 
